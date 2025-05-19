@@ -19,3 +19,7 @@ planning-voor-de-vaardigheid
 stap-1-doelen-opstellen
 stap-2-beginnen-met-leren
 stap-3-planning-tijd
+data-management
+rna-sequencing-project
+portfolio
+repoductie-van-data-analyse
