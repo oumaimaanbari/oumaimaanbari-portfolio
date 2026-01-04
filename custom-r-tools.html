@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Custom R tools | ʚ♡ɞ Oumaima Anbari ʚ♡ɞ" />
+<meta property="og:type" content="book" />
+
+
+
+
+<meta name="author" content="Oumaima Anbari" />
+
+
+
+<meta name="description" content="Custom R tools | ʚ♡ɞ Oumaima Anbari ʚ♡ɞ">
+
+<title>Custom R tools | ʚ♡ɞ Oumaima Anbari ʚ♡ɞ</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<!-- header.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Style Sheet -->
+<link rel="stylesheet" href="styles.css" />
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<!--bookdown:toc:end-->
+<!--bookdown:toc:start-->
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="custom-r-tools" class="section level1">
+<h1>Custom R tools</h1>
+<nav class="social">
+<div>
+<p><i class="fa-brands fa-github"></i>
+<a class="darkerText" href="https://github.com/oumaimaanbari" target="_blank">Github </a></p>
+</div>
+<div>
+<p><i class="fa-brands fa-linkedin"></i>
+<a class="darkerText" href="https://www.linkedin.com/in/oumaima-anbari-7ab33014a/" target="_blank">LinkedIn </a></p>
+</div>
+</nav>
+<nav class="navBar">
+<hr>
+<ul>
+<li>
+<a href="index.html">HOME</a>
+</li>
+<li>
+<a href="section.html">CURRICULUM VITAE</a>
+</li>
+<li>
+<a href="section.html">PORTFOLIO     ▾</a>
+<ul class="dropdown">
+<li>
+<a href="vrije-ruimte.html">Vrije Ruimte</a>
+</li>
+<li>
+<a href="data-management.html">Data Management</a>
+</li>
+<li>
+<a href="reproduceerbaarheid.html">Reproduced Data</a>
+</li>
+<li>
+<a href="bronvermelding-projecticum-introduction.html">Research</a>
+</li>
+<li>
+<a href="parametric-report-met-rmarkdown.html">Parametric Report</a>
+</li>
+<li>
+<a href="custom-r-tools.html">Custom R tools</a>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+</nav>
+<p><br>
+<br>
+<br></p>
+<p>In onderzoek waarin herhaaldelijk met dezelfde analyses of visualisatie wordt gewerkt (bijvoorbeeld bij specifieke assays), kunnen cusom R packages, scripts en pipelines goed van pas komen. In R packages komen alle functies van data manipulatie, statistische analysen en visualisatie samen in één installeerbaar package. Scripts en pipelines kunnen daarnaast (deels) data processing automatiseren.
+<br></p>
+<div id="custom-r-package" class="section level3">
+<h3>Custom R package</h3>
+<p><br>
+Ik heb een custom R package gebouwd en gepubliceerd via Github. Het R package genaamd dnaRt visualiseert DNA sequentie in vier verschillende plots. De functies zijn voorzien van roxygen2 comments, een complete DESCRIPTION &amp; NAMESPACE configuration en een vignette waarin gebruik van de functies wordt toegelicht.
+<br>
+<br>
+Het package kan geïnstalleerd worden vanuit Github en runt zonder installatie errors:
+<br></p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb53-1"><a href="custom-r-tools.html#cb53-1" tabindex="-1"></a>devtools<span class="op">::</span><span class="at">install_github</span>(<span class="st">&quot;oumaimaanbari/dnaRt&quot;</span>, dependencies <span class="op">=</span> <span class="cn">TRUE</span>, build_vignettes <span class="op">=</span> <span class="cn">TRUE</span>)</span>
+<span id="cb53-2"><a href="custom-r-tools.html#cb53-2" tabindex="-1"></a>library(dnaRt)</span></code></pre></div>
+<br>
+<div class="pkgGithub">
+<p><i class="fa-brands fa-github"></i>
+<a class="darkerText" href="https://github.com/oumaimaanbari/dnaRt" target="_blank">View the R package on Github</a></p>
+</div>
+<p><br></p>
+</div>
+<div id="r-script" class="section level3">
+<h3>R script</h3>
+<p><br>
+Daarnaast heb ik gewerkt aan een user interactive R script voor de analyse van een BCA-assay. Tijdens het projecticum waar het effect van proteolytische effect op alfa-amylase in het speeksel werd onderzocht, werd herhaalderlijk een BCA-assay uitgevoerd volgens hetzelfde protocol. Bij het vergroten van de steekproef nam ook de te analyseren data toe.</p>
+Omdat de assay telkens volgens een vast protocol werd uitgevoerd, was de data analyse deels te automatiseren. Hiervoor heb ik een user-interactive R script geschreven dat:
+<div style="margin-left: 30px; margin-top: 5px;">
+<ul>
+<li>de data corrigeert met de blanco;</li>
+<li>de ijklijn opstelt;</li>
+<li>de eiwit concentraties berekend, waarvan de user de meest geschikte verdunningsfactor bepaald op basis van gemiddelde en standaarddeviatie ten opzichte van de ijklijn;</li>
+<li>de resultaten van de controles weergeeft;</li>
+<li>tot slot, wanneer alles voldoet aan de eisen van de user, worden de berekende concentraties append aan een gedeeld data file met sample-ID, datum en eiwitconcentratie.</li>
+</ul>
+</div>
+<p>Op deze manier kan de assay herhaald worden voor speeksel van verschillende donoren, terwijl de output wordt samgevegd in één consistent datafile.</p>
+<br>
+<div class="pkgGithub">
+<p><i class="fa-brands fa-github"></i>
+<a class="darkerText" href="https://github.com/oumaimaanbari/speeksel_BMR" target="_blank">View the R script on Github</a></p>
+</div>
+<p><br>
+<br>
+<br>
+<br>
+<br></p>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="parametric-report-met-rmarkdown.html"><button class="btn btn-default">Previous</button></a>
+<a href="bronvermelding-projecticum-introduction.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

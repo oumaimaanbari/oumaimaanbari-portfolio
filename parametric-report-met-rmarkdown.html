@@ -2,71 +2,69 @@
 <html lang="" xml:lang="">
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7 Parametric report met RMarkdown | Mijn Portfolio</title>
-  <meta name="description" content="7 Parametric report met RMarkdown | Mijn Portfolio" />
-  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Parametric report met RMarkdown | ʚ♡ɞ Oumaima Anbari ʚ♡ɞ" />
+<meta property="og:type" content="book" />
 
-  <meta property="og:title" content="7 Parametric report met RMarkdown | Mijn Portfolio" />
-  <meta property="og:type" content="book" />
-  
-  
-  
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7 Parametric report met RMarkdown | Mijn Portfolio" />
-  
-  
-  
+
 
 <meta name="author" content="Oumaima Anbari" />
 
 
-<meta name="date" content="2024-11-15" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="bronvermelding-projecticum-introduction.html"/>
-<link rel="next" href="references.html"/>
+<meta name="description" content="Parametric report met RMarkdown | ʚ♡ɞ Oumaima Anbari ʚ♡ɞ">
+
+<title>Parametric report met RMarkdown | ʚ♡ɞ Oumaima Anbari ʚ♡ɞ</title>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<!-- header.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Style Sheet -->
+<link rel="stylesheet" href="styles.css" />
 
 
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-
-
+<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -118,11 +116,13 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
-
 <style type="text/css">
-  
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  pre:not([class]) {
+    background-color: white;
+  }
 </style>
+
+
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
@@ -147,146 +147,132 @@ div.csl-indent {
 }
 </style>
 
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
 </head>
 
 <body>
 
+<div class="container-fluid main-container">
 
 
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Data Science For Biology II</a></li>
-<li class="chapter" data-level="2" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html"><i class="fa fa-check"></i><b>2</b> Curriculum Vitae Oumaima Anbari</a>
+<div class="row">
+<div class="col-sm-12">
+<!--bookdown:toc:end-->
+<!--bookdown:toc:start-->
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="parametric-report-met-rmarkdown" class="section level1">
+<h1>Parametric report met RMarkdown</h1>
+<nav class="social">
+<div>
+<p><i class="fa-brands fa-github"></i>
+<a class="darkerText" href="https://github.com/oumaimaanbari" target="_blank">Github </a></p>
+</div>
+<div>
+<p><i class="fa-brands fa-linkedin"></i>
+<a class="darkerText" href="https://www.linkedin.com/in/oumaima-anbari-7ab33014a/" target="_blank">LinkedIn </a></p>
+</div>
+</nav>
+<nav class="navBar">
+<hr>
 <ul>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#educatie"><i class="fa fa-check"></i>Educatie</a>
-<ul>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#biologie-en-medisch-laboratoriumonderzoek"><i class="fa fa-check"></i>Biologie en Medisch Laboratoriumonderzoek</a></li>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#mondzorgkunde"><i class="fa fa-check"></i>Mondzorgkunde</a></li>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#havo"><i class="fa fa-check"></i>Havo</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#werkervaring"><i class="fa fa-check"></i>Werkervaring</a>
-<ul>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#flexibele-bibliotheekmedewerker"><i class="fa fa-check"></i>Flexibele Bibliotheekmedewerker</a></li>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#student-assistent"><i class="fa fa-check"></i>Student Assistent</a></li>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#orderpicker"><i class="fa fa-check"></i>Orderpicker</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="curriculum-vitae-oumaima-anbari.html"><a href="curriculum-vitae-oumaima-anbari.html#talen"><i class="fa fa-check"></i>Talen</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html"><i class="fa fa-check"></i><b>3</b> Vrije ruimte</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#doel-van-mijn-vrije-ruimte"><i class="fa fa-check"></i><b>3.1</b> Doel van mijn vrije ruimte</a>
-<ul>
-<li class="chapter" data-level="" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#where-do-i-want-to-be-in-2-years-time"><i class="fa fa-check"></i>Where do I want to be in ~2 years time?</a></li>
-<li class="chapter" data-level="" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#how-am-i-doing-now-with-respect-to-this-goal"><i class="fa fa-check"></i>How am I doing now with respect to this goal?</a></li>
-<li class="chapter" data-level="" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#what-would-be-the-next-skill-to-learn"><i class="fa fa-check"></i>What would be the next skill to learn?</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#planning-voor-de-vaardigheid"><i class="fa fa-check"></i><b>3.2</b> Planning voor de vaardigheid</a>
-<ul>
-<li class="chapter" data-level="" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#stap-1-doelen-opstellen"><i class="fa fa-check"></i>Stap 1: Doelen opstellen</a></li>
-<li class="chapter" data-level="" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#stap-2-beginnen-met-leren"><i class="fa fa-check"></i>Stap 2: Beginnen met leren</a></li>
-<li class="chapter" data-level="" data-path="vrije-ruimte.html"><a href="vrije-ruimte.html#stap-3-planning-tijd"><i class="fa fa-check"></i>Stap 3: Planning tijd</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>4</b> Data management</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="data-management.html"><a href="data-management.html#rna-sequencing-project"><i class="fa fa-check"></i><b>4.1</b> RNA sequencing project</a></li>
-<li class="chapter" data-level="4.2" data-path="data-management.html"><a href="data-management.html#portfolio"><i class="fa fa-check"></i><b>4.2</b> Portfolio</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="reproductie-van-data-analyse.html"><a href="reproductie-van-data-analyse.html"><i class="fa fa-check"></i><b>5</b> Reproductie van data analyse</a></li>
-<li class="chapter" data-level="6" data-path="bronvermelding-projecticum-introduction.html"><a href="bronvermelding-projecticum-introduction.html"><i class="fa fa-check"></i><b>6</b> Bronvermelding projecticum introduction</a>
-<ul>
-<li class="chapter" data-level="" data-path="bronvermelding-projecticum-introduction.html"><a href="bronvermelding-projecticum-introduction.html#introductie"><i class="fa fa-check"></i>Introductie</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="parametric-report-met-rmarkdown.html"><a href="parametric-report-met-rmarkdown.html"><i class="fa fa-check"></i><b>7</b> Parametric report met RMarkdown</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li>
+<a href="index.html">HOME</a>
+</li>
+<li>
+<a href="section.html">CURRICULUM VITAE</a>
+</li>
+<li>
+<a href="section.html">PORTFOLIO     ▾</a>
+<ul class="dropdown">
+<li>
+<a href="vrije-ruimte.html">Vrije Ruimte</a>
+</li>
+<li>
+<a href="data-management.html">Data Management</a>
+</li>
+<li>
+<a href="reproduceerbaarheid.html">Reproduced Data</a>
+</li>
+<li>
+<a href="bronvermelding-projecticum-introduction.html">Research</a>
+</li>
+<li>
+<a href="parametric-report-met-rmarkdown.html">Parametric Report</a>
+</li>
+<li>
+<a href="custom-r-tools.html">Custom R tools</a>
+</li>
 </ul>
-
-      </nav>
-    </div>
-
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mijn Portfolio</a>
-          </h1>
-        </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="parametric-report-met-rmarkdown" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">7</span> Parametric report met RMarkdown<a href="parametric-report-met-rmarkdown.html#parametric-report-met-rmarkdown" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Voor deze portfolio opdracht heb ik een parametric RMarkdown COVID-19 rapport gemaakt met interactieve plots. Met dit rapport kan de gebruiker zelf het land, het jaar en de maanden kiezen. Hier maakt het rapport vervolgens automatisch de grafieken met de hoeveelheid COVID-19 cases en de sterfgevallen per dag. Alle resultaten zijn gebaseerd op data van de ECDC.</p>
-<p>Bekijk hier de demonstratievideo: <a href="https://www.youtube.com/watch?v=4xaGzwrEvbQ">YouTube</a></p>
-<p>Bekijk hier de gegenereerde COVID-19 report: <a href="./output/report/covid19_netherlands_2021.html">COVID-19 rapport</a></p>
+</li>
+</ul>
+<hr>
+</nav>
+<p><br>
+<br>
+<br></p>
+<p>Ik heb een R Markdown report opgezet dat automatisch een COVID-19 analyse genereert op basis van drie inputs: land, jaar en maand(en). Het rapport haalt data uit de Europees Centrum voor ziektepreventie en -bestrijding (ECDC) dataset en maakt twee visualisaties: dagelijke cases en dagelijkse sterfgevallen. Met behulp van een parametric Rmarkdown kan een analyse rapport op reproduceerbare wijze (deels) geautomtiseerd worden <span class="citation">(<a href="#ref-europeancentrefordiseasepreventionandcontrolDataDailyNumber2022">European Centre for Disease Prevention and Control 2022</a>)</span>.</p>
+<p>Bekijk de onderstaande video voor de parametric COVID-19 report in RMD demo.
+<br>
+<br></p>
+<video controls muted src="screenshots/parametric_tutorial.mp4" width="100%">
+</video>
+<p><br>
+<br></p>
+<p>Bekijk via <a href="./output/report/covid_report.html">deze link</a> een voorbeeld van een gegenereerde COVID-19 report.
+<br>
+<br>
+<br></p>
+<hr>
 
 </div>
-            </section>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-europeancentrefordiseasepreventionandcontrolDataDailyNumber2022" class="csl-entry">
+European Centre for Disease Prevention and Control. 2022. <span>“Data on the Daily Number of New Reported <span>COVID-19</span> Cases and Deaths by <span>EU</span>/<span>EEA</span> Country.”</span> https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country.
+</div>
+</div>
+<p style="text-align: center;">
+<a href="reproduceerbaarheid.html"><button class="btn btn-default">Previous</button></a>
+<a href="custom-r-tools.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
 
-          </div>
-        </div>
-      </div>
-<a href="bronvermelding-projecticum-introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
-  </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+
+</div>
+
 <script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-  "sharing": {
-    "github": false,
-    "facebook": true,
-    "twitter": true,
-    "linkedin": false,
-    "weibo": false,
-    "instapaper": false,
-    "vk": false,
-    "whatsapp": false,
-    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-  },
-  "fontsettings": {
-    "theme": "white",
-    "family": "sans",
-    "size": 2
-  },
-  "edit": {
-    "link": null,
-    "text": null
-  },
-  "history": {
-    "link": null,
-    "text": null
-  },
-  "view": {
-    "link": null,
-    "text": null
-  },
-  "download": null,
-  "search": {
-    "engine": "fuse",
-    "options": null
-  },
-  "toc": {
-    "collapse": "subsection"
-  }
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
-});
+
 </script>
 
 </body>
-
 </html>

@@ -1,0 +1,372 @@
+:root {
+  --primary-color: #59514c;
+  --secondary-color: #2e2a27;
+  --bg-color: #f7f6f2;
+  --bg-dark: #eee9e1;
+}
+
+a {
+  color: #8f8c81;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  transition-duration: 200ms;
+}
+
+h1 {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 3.2em;
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 600;
+}
+
+
+body {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 14px;
+}
+
+.darkerText {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+header, main, footer {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+p {
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+
+.social {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  padding: 10px;
+}
+
+.social a {
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+.social a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.author, .title, .btn.btn-default {
+  display: none;
+}
+
+.navBar hr {
+  height: 5px;
+  margin: 5px 0 0 0;
+  color: var(--secondary-color);
+}
+
+.navBar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.navBar li {
+  display: inline-block;
+  position: relative;
+}
+
+.navBar a {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  width: 200px;
+}
+
+.navBar a:hover {
+  cursor: pointer;
+  background: var(--bg-dark);
+}
+
+.navBar .dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  border-radius: 0 0 2% 2%;
+  overflow: hidden;
+  border-left: 1px solid var(--bg-dark);
+  border-right: 1px solid var(--bg-dark);
+}
+
+.navBar li:hover > .dropdown {
+  display: block;
+}
+
+.navBar .dropdown li {
+  display: block;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--bg-dark);
+}
+
+.navBar .dropdown li a {
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 12px;
+}
+
+.navBar .dropdown li a:hover {
+  background-color: var(--bg-dark);
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 60px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.tegel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.tegel img {
+  max-width: 100px;
+  height: auto;
+}
+
+.projectTitel{
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.project > div:last-child {
+  flex: 1;
+}
+
+.subTitle {
+  line-height: 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.subTitle i {
+  font-size: 0.8em;
+}
+
+.justText {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.mail {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mail a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mail:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.curContainer {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 350px 500px;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  padding-left: 30px;
+  border-left: 1px solid var(--secondary-color);
+}
+
+.name .curName {
+  font-weight: 600;
+  font-size: xxx-large;
+  margin: 0 0 5px;
+}
+
+.name .beschrijving {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.name .contact {
+  padding: 0;
+  list-style: none;
+}
+
+.name .contact li {
+  margin-bottom: 10px;
+}
+
+.name .contact a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.name .contact i {
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--secondary-color);
+}
+
+.info ul {
+  list-style: none;
+  padding-left: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.intro {
+  padding-left: 30px;
+  border-left: 1px solid var(--secondary-color);
+  text-align: justify;
+}
+
+h2 {
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.werk {
+  padding-left: 30px;
+}
+
+.werk h4 {
+  margin: 20px 0 0;
+  font-size: 1.2em;
+}
+
+.skill {
+  margin-top: 50px;
+}
+
+.werk ul {
+  line-height: 25px;
+  padding-left: 20px;
+}
+
+.opl {
+  padding-left: 30px;
+  text-align: justify;
+  border-left: 1px solid var(--secondary-color);
+}
+
+.opl .loc {
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.opl .item {
+  position: relative;
+}
+
+.opl .item::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: var(--secondary-color);
+  content: '';
+  border-radius: 50%;
+  left: -37px;
+}
+
+.opl .item .des ul {
+  padding-left: 20px;
+}
+
+video {
+  display: block;
+  width: 90%;
+  margin: auto;
+  border-radius: 2%;
+  border: 3px solid var(--bg-dark) ;
+}
+
+.pkgGithub a {
+  text-decoration: none;
+}
+
+.pkgGithub a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
